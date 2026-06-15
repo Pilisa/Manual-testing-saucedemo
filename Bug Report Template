@@ -1,0 +1,95 @@
+🐛 BUG001
+Title: Cart total not updating after item removal
+Module: Cart / Checkout
+Steps to Reproduce:
+Login with valid user
+Add 2 items to cart
+Go to cart
+Remove 1 item
+Expected Result:
+
+Cart total should update correctly after item removal
+
+Actual Result:
+
+Total price remains unchanged even after removing item
+
+Severity: Medium
+Priority: High
+Status: Open
+🐛 BUG002
+Title: Error message not visually aligned on login screen
+Module: Login
+Steps:
+Enter invalid username
+Click Login
+Expected Result:
+
+Error message should appear properly aligned under login form
+
+Actual Result:
+
+Error message overlaps with input field
+
+Severity: Low
+Priority: Low
+Status: Open
+🐛 BUG003
+Title: Sorting dropdown resets after page refresh
+Module: Inventory
+Steps:
+Login
+Apply sorting (Price low → high)
+Refresh page
+Expected Result:
+
+Sorting preference should persist
+
+Actual Result:
+
+Sorting resets to default (A → Z)
+
+Severity: Low
+Priority: Medium
+Status: Open
+🐛 BUG004
+Title: Checkout button clickable without items in cart
+Module: Cart / Checkout
+Steps:
+Login
+Go to cart (without adding items)
+Click Checkout
+Expected Result:
+
+Checkout button should be disabled or show validation message
+
+Actual Result:
+
+User is allowed to proceed to checkout step
+
+Severity: High
+Priority: High
+Status: Open
+🐛 BUG005
+Title: Product image not loading for specific item
+Module: Inventory
+Steps:
+Login
+View product list
+Expected Result:
+
+All product images should load correctly
+
+Actual Result:
+
+One product image appears broken/missing
+
+Severity: Medium
+Priority: Medium
+Status: Open
+📊 Severity Guide (Important for Interviews)
+Severity	Meaning
+Critical	System crash / unusable
+High	Major feature broken
+Medium	Function works but has issue
+Low	UI / cosmetic issue
