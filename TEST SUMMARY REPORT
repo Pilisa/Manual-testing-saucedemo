@@ -1,0 +1,70 @@
+🧾 TEST SUMMARY REPORT
+
+Project Information
+Field	Details
+Project Name	SauceDemo Manual Testing
+Application	SauceDemo E-commerce Web App
+Test Type	Manual Functional Testing
+Tester	Pilisa Gqokoma
+Environment	Chrome Browser (Windows 11)
+Version	1.0
+1. Objective
+
+The objective of this testing cycle was to verify the core functionalities of the SauceDemo web application, including login, product browsing, cart management, checkout process, and logout functionality.
+
+2. Scope of Testing
+Included Modules:
+Login functionality
+Product inventory page
+Shopping cart
+Checkout process
+Logout functionality
+UI validation
+Excluded:
+Performance testing
+Security testing
+Load testing
+API testing
+
+3. Test Execution Summary
+Metric	Value
+Total Test Cases	19
+Passed	18
+Failed	1
+Blocked	0
+Pass Rate	94.7%
+
+4. Defect Summary
+Defect ID	Description	Severity	Status
+BUG001	Cart total not updating after item removal	Medium	Open
+BUG002	Login error message alignment issue	Low	Open
+BUG003	Sorting resets after refresh	Low	Open
+BUG004	Checkout allowed with empty cart	High	Open
+BUG005	Product image not loading	Medium	Open
+5. Key Observations
+Login functionality is stable and works as expected.
+Most UI components are functional but have minor usability issues.
+Checkout process works but allows unexpected behavior in edge cases.
+Cart functionality requires improvement in price calculation logic.
+Product display is generally stable with minor inconsistencies.
+6. Risks Identified
+Incorrect cart calculations may lead to incorrect order totals.
+Checkout validation gaps could allow incomplete orders.
+UI inconsistencies may affect user experience.
+7. Overall Test Result
+
+The application is functionally stable for basic user flows.
+However, there are minor to moderate defects that should be addressed before production release.
+
+8. Recommendation
+
+✔ Proceed to bug fixing phase
+✔ Retest resolved defects
+✔ Perform regression testing after fixes
+❗ Do not release to production until BUG004 (checkout validation) is resolved
+
+9. Conclusion
+
+The SauceDemo application meets most functional requirements. While core features are working correctly, improvements are required in cart calculations, UI consistency, and checkout validation.
+
+Overall quality status: ACCEPTABLE WITH MINOR FIXES REQUIRED
